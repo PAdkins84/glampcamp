@@ -6,7 +6,8 @@ $secondary-color: #4B4453
 $off-white: #F0E6EF
 $cream: #FFFADE
 
-$breakpoint-mobile: 650px
+$minimum-width: 300px
+$breakpoint-mobile: 575px
 $breakpoint-about: 993px
 
 body
@@ -118,7 +119,7 @@ body
 .aboutPage
     display: grid
     grid-template-columns: 5% 5% 10% 20% 60%
-    grid-template-rows: 20% 80%
+    grid-template-rows: 20% 5% 75%
     background-color: $off-white
     height: 600px
 
@@ -131,10 +132,19 @@ body
   grid-row-start: 2
 
 .aboutImg
-    margin-top: 10px
-    width: 300px
-    grid-column-start: 2
+    width: 260px
+    grid-column-start: 3
+    grid-column-end: 5
     grid-row-start: 2
+    z-index: 1
+
+.imgBg
+    background-color: $primary-color
+    width: 260px
+    height: 210px
+    grid-column-start: 2
+    grid-row-start: 3
+    z-index: 0
 
 // Contact page styles
 
@@ -148,11 +158,35 @@ body
 
 // Mobile media queries
 
-@media (max-width: $breakpoint-mobile)
+@media screen and (min-width: $minimum-width) and (max-width: $breakpoint-mobile)
     .mobileRemove
         display: none
     .menu-bars
         display: inline
+    .container
+        padding: 0 !important
+    .aboutPage
+        display: grid
+        grid-template-columns: 100%
+        grid-template-rows: 5% 30% 65%
+        background-color: $off-white
+        height: 100%
+    .aboutImg
+        margin-top: 10px
+        grid-column-start: 1
+        grid-row-start: 2
+        width: 100vw
+        height: 300px
+    .aboutP
+        grid-column-start: 1
+        grid-row-start: 3
+    .aboutH
+        grid-column-start: 1
+        grid-column-end: 2
+    .imgBg
+        display: none
+
+@media screen and (min-width: $breakpoint-mobile) and(max-width: $breakpoint-about)
     .container
         padding: 0 !important
     .aboutPage
@@ -165,27 +199,8 @@ body
         margin-top: 10px
         grid-column-start: 1
         grid-row-start: 2
-        width: 100vw
+        width: 500px
         height: 300px
     .aboutP
         grid-column-start: 1
-        grid-row-start: 3 
-
-// @media (max-width: $breakpoint-about)
-//     .container
-//         padding: 0 !important
-//     .aboutPage
-//         display: grid
-//         grid-template-columns: 100%
-//         grid-template-rows: 5% 38% 57%
-//         background-color: $off-white
-//         height: 100%
-//     .aboutImg
-//         margin-top: 10px
-//         grid-column-start: 1
-//         grid-row-start: 2
-//         width: 100vw
-//         height: 300px
-//     .aboutP
-//         grid-column-start: 1
-//         grid-row-start: 3 
+        grid-row-start: 3

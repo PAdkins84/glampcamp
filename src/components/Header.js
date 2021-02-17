@@ -14,10 +14,10 @@ const Header = () => {
         <Navbar className="mobileStyle" bg="light" variant="light">
             <Navbar.Brand><Link to="/" className="text-dark"><img src={logo} alt="Glamp Camp Logo" className="logoStyle"/></Link></Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link><Link to="/about" className="mobileRemove text-dark">About</Link></Nav.Link>
-                <Nav.Link><Link to="/gallery" className="mobileRemove text-dark">Gallery</Link></Nav.Link>
-                <Nav.Link><Link to="/pricing" className="mobileRemove text-dark">Pricing</Link></Nav.Link>
-                <Nav.Link><Link to="/contact" className="mobileRemove text-dark">Contact</Link></Nav.Link>
+                <Link to="/about" className="mobileRemove text-dark">About</Link>
+                <Link to="/gallery" className="mobileRemove text-dark ml-3">Gallery</Link>
+                <Link to="/pricing" className="mobileRemove text-dark ml-3">Pricing</Link>
+                <Link to="/contact" className="mobileRemove text-dark ml-3">Contact</Link>
             </Nav>
             <a className="text-dark" href="https://www.facebook.com/glamp.camp.5/"><FaFacebookSquare size={20} className="ml-auto mr-2" /></a>
             <a className="text-dark" href="https://www.instagram.com/glampcamp21/"><FaInstagram size={20} className="mr-3" /></a>
@@ -49,8 +49,8 @@ const Header = () => {
                                 </Link>
                             </li>
                             <li className="nav-text">
-                                <Link to="/book">
-                                    <span>Book</span>
+                                <Link to="/gallery">
+                                    <span>Gallery</span>
                                 </Link>
                             </li>
                             <li className="nav-text">

@@ -592,8 +592,8 @@ body {
   display: grid;
   -ms-grid-columns: 5% 5% 10% 20% 60%;
       grid-template-columns: 5% 5% 10% 20% 60%;
-  -ms-grid-rows: 20% 80%;
-      grid-template-rows: 20% 80%;
+  -ms-grid-rows: 20% 5% 75%;
+      grid-template-rows: 20% 5% 75%;
   background-color: #F0E6EF;
   height: 600px;
 }
@@ -612,12 +612,24 @@ body {
 }
 
 .aboutImg {
-  margin-top: 10px;
-  width: 300px;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+  width: 260px;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 5;
   -ms-grid-row: 2;
       grid-row-start: 2;
+  z-index: 1;
+}
+
+.imgBg {
+  background-color: #EFC3E6;
+  width: 260px;
+  height: 210px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  z-index: 0;
 }
 
 .contactStyle {
@@ -628,13 +640,52 @@ body {
   background-color: #F0E6EF;
 }
 
-@media (max-width: 650px) {
+@media screen and (min-width: 300px) and (max-width: 575px) {
   .mobileRemove {
     display: none;
   }
   .menu-bars {
     display: inline;
   }
+  .container {
+    padding: 0 !important;
+  }
+  .aboutPage {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 5% 30% 65%;
+        grid-template-rows: 5% 30% 65%;
+    background-color: #F0E6EF;
+    height: 100%;
+  }
+  .aboutImg {
+    margin-top: 10px;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    width: 100vw;
+    height: 300px;
+  }
+  .aboutP {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+  }
+  .aboutH {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .imgBg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 575px) and (max-width: 993px) {
   .container {
     padding: 0 !important;
   }
@@ -654,7 +705,7 @@ body {
         grid-column-start: 1;
     -ms-grid-row: 2;
         grid-row-start: 2;
-    width: 100vw;
+    width: 500px;
     height: 300px;
   }
   .aboutP {

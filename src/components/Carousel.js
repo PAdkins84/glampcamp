@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const CarouselGC = () => {
     return (
-        <Carousel>
+        <Carousel className="carousel">
             <Carousel.Item interval={3000}>
             <img
             className="d-block w-100"
