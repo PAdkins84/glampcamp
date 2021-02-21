@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { Navbar, Nav } from 'react-bootstrap';
-import logo from '../images/glampcamp.png';
+import logo from '../images/icontest5.png';
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import * as FaIcons from 'react-icons/fa';
 import * as AiIcons from 'react-icons/ai';
@@ -11,7 +11,7 @@ const Header = () => {
 
     const showSidebar = () => setSidebar(!sidebar)
     return (
-        <Navbar className="mobileStyle" bg="light" variant="light">
+        <Navbar className="mobileStyle" variant="light">
             <Navbar.Brand><Link to="/" className="text-dark"><img src={logo} alt="Glamp Camp Logo" className="logoStyle"/></Link></Navbar.Brand>
             <Nav className="mr-auto">
                 <Link to="/about" className="mobileRemove text-dark">About</Link>

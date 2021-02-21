@@ -6,15 +6,16 @@ import { faMapMarkerAlt, faPhone, faEnvelope } from '@fortawesome/pro-solid-svg-
 
 const Contact = () => {
     function sendEmail(e) {
-        e.preventDefault();
+            e.preventDefault();
 
-        emailjs.sendForm('service_i2cnns8', 'template_ret5k2c', e.target, 'user_XuohWCmylbyZzZ5MphvVw')
+            emailjs.sendForm('service_i2cnns8', 'template_ret5k2c', e.target, 'user_XuohWCmylbyZzZ5MphvVw')
             .then((result) => {
                 console.log(result.text);
         }, (error) => {
           console.log(error.text);
         });
         e.target.reset()
+        alert('Thanks for your enquiry')
     }
 
     // function validateEmail(email) {
@@ -34,18 +35,18 @@ const Contact = () => {
             <form onSubmit={sendEmail} name="contact">
                 <input type="hidden" name="bot-field" />
                 <input type="hidden" name="form-name" value="contact" />
-                    <div class="row">
+                    <div className="row">
                         <div className="col-md-6">
                             <div className="md-form mb-0">
-                                <input type="text" id="name" placeholder="Your Name" name="name" class="form-control"/>
-                                <label for="name" class="">Your name</label>
+                                <input type="text" id="name" placeholder="Your Name" name="name" className="form-control"/>
+                                <label htmlFor="name" className="">Your name</label>
                             </div>
                         </div>
 
                         <div className="col-md-6">
                             <div className="md-form mb-0">
-                                <input type="email" id="email" placeholder="Your Email" name="email" class="form-control"/>
-                                <label for="email" class="">Your email</label>
+                                <input type="email" id="email" placeholder="Your Email" name="email" className="form-control"/>
+                                <label htmlFor="email" className="">Your email</label>
                             </div>
                         </div>
 
@@ -55,7 +56,7 @@ const Contact = () => {
                         <div className="col-md-12">
                             <div className="md-form mb-0">
                                 <input type="text" id="subject" placeholder="Subject" name="subject" className="form-control"/>
-                                <label for="subject" className="">Subject</label>
+                                <label htmlFor="subject" className="">Subject</label>
                             </div>
                         </div>
                     </div>
@@ -66,7 +67,7 @@ const Contact = () => {
 
                             <div className="md-form">
                                 <textarea type="text" id="message" placeholder="Your message" name="message" rows="2" className="form-control md-textarea"></textarea>
-                                <label for="message">Your message</label>
+                                <label htmlFor="message">Your message</label>
                             </div>
 
                         </div>
@@ -74,13 +75,13 @@ const Contact = () => {
 
                     <div className="row">
                     </div>
-                    <div class="text-center text-md-left mb-5">
+                    <div className="text-center text-md-left mb-5">
                         <button className="btn btn-outline-dark" type="submit">Send</button>
                     </div>
                 </form>
             </div>
-            <div class="col-md-3 text-center">
-                <ul class="list-unstyled mb-0">
+            <div className="col-md-3 text-center">
+                <ul className="list-unstyled mb-0">
                     <li><FontAwesomeIcon icon={faMapMarkerAlt} size="3x"/>
                         <p>Birmingham, UK</p>
                     </li>

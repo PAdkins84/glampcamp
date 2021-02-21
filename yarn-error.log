@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn remove react-booking-calendar
+  /usr/local/bin/node /usr/local/bin/yarn add gatsby-plugin-manifest
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -14,7 +14,8 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: EACCES: permission denied, unlink '/Users/b13ltd/Desktop/GlampCamp/glamp/node_modules/clsx/clsx.d.ts'
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:67:26)
 
 npm manifest: 
   {
@@ -51,7 +52,7 @@ npm manifest:
       "react-helmet": "^6.1.0",
       "react-icons": "^4.2.0",
       "react-image-gallery": "^1.0.8",
-      "react-photo-gallery": "^8.0.0",
+      "react-particles-js": "^3.4.1",
       "sass": "^1.32.7"
     }
   }
@@ -2682,14 +2683,6 @@ Lockfile:
       gatsby-core-utils "^1.10.0"
       gatsby-legacy-polyfills "^0.7.0"
   
-  babel-runtime@~6.11.6:
-    version "6.11.6"
-    resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.11.6.tgz#6db707fef2d49c49bfa3cb64efdb436b518b8222"
-    integrity sha1-bbcH/vLUnEm/o8tk79tDa1GLgiI=
-    dependencies:
-      core-js "^2.4.0"
-      regenerator-runtime "^0.9.5"
-  
   backo2@1.0.2:
     version "1.0.2"
     resolved "https://registry.npmjs.org/backo2/-/backo2-1.0.2.tgz"
@@ -3892,11 +3885,6 @@ Lockfile:
     version "3.8.3"
     resolved "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.8.3.tgz"
     integrity sha512-V5qQZVAr9K0xu7jXg1M7qTEwuxUgqr7dUOezGaNa7i+Xn9oXAU/d1fzqD9ObuwpVQOaorO5s70ckyi1woP9lVA==
-  
-  core-js@^2.4.0:
-    version "2.6.12"
-    resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
-    integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
   
   core-js@^3.6.5:
     version "3.8.3"
@@ -8935,7 +8923,7 @@ Lockfile:
     resolved "https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz"
     integrity sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw==
   
-  moment@2.x, moment@^2.27.0:
+  moment@^2.27.0:
     version "2.29.1"
     resolved "https://registry.npmjs.org/moment/-/moment-2.29.1.tgz"
     integrity sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==
@@ -9955,6 +9943,11 @@ Lockfile:
     resolved "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz"
     integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
   
+  pathseg@^1.2.0:
+    version "1.2.0"
+    resolved "https://registry.yarnpkg.com/pathseg/-/pathseg-1.2.0.tgz#22af051e28037671e7799e296fe96c5dcbe53acd"
+    integrity sha512-+pQS7lTaoVIXhaCW7R3Wd/165APzZHWzYVqe7dxzdupxQwebgpBaCmf0/XZwmoA/rkDq3qvzO0qv4d5oFVrBRw==
+  
   pbkdf2@^3.0.3:
     version "3.1.1"
     resolved "https://registry.npmjs.org/pbkdf2/-/pbkdf2-3.1.1.tgz"
@@ -10555,7 +10548,7 @@ Lockfile:
       react-is "^16.3.2"
       warning "^4.0.0"
   
-  prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@~15.7.2:
+  prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
     version "15.7.2"
     resolved "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
     integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -10782,14 +10775,6 @@ Lockfile:
       minimist "^1.2.0"
       strip-json-comments "~2.0.1"
   
-  react-booking-calendar@^1.0.3:
-    version "1.0.3"
-    resolved "https://registry.yarnpkg.com/react-booking-calendar/-/react-booking-calendar-1.0.3.tgz#7192b1f43768b867a614b0f1333e24a259b3f0a7"
-    integrity sha1-cZKx9DdouGemFLDxMz4kolmz8Kc=
-    dependencies:
-      babel-runtime "~6.11.6"
-      moment "2.x"
-  
   react-bootstrap@^1.4.3:
     version "1.4.3"
     resolved "https://registry.npmjs.org/react-bootstrap/-/react-bootstrap-1.4.3.tgz"
@@ -10924,13 +10909,13 @@ Lockfile:
       uncontrollable "^7.0.0"
       warning "^4.0.3"
   
-  react-photo-gallery@^8.0.0:
-    version "8.0.0"
-    resolved "https://registry.yarnpkg.com/react-photo-gallery/-/react-photo-gallery-8.0.0.tgz#04ff9f902a2342660e63e6817b4f010488db02b8"
-    integrity sha512-Y9458yygEB9cIZAWlBWuenlR+ghin1RopmmU3Vice8BeJl0Se7hzfxGDq8W1armB/ic/kphGg+G1jq5fOEd0sw==
+  react-particles-js@^3.4.1:
+    version "3.4.1"
+    resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-3.4.1.tgz#e0f17ae1ddb07d01ce911448db76cd59726fe666"
+    integrity sha512-c3+vITUMN9RlgbERZYd9Kzvjmf49ENp07+9+NDLvE1Jf9euabrJi/q6gCCcv5foxGHBYjHnGs47Tusmrl0/+GQ==
     dependencies:
-      prop-types "~15.7.2"
-      resize-observer-polyfill "^1.5.0"
+      lodash "^4.17.11"
+      tsparticles "^1.18.10"
   
   react-refresh@^0.8.3:
     version "0.8.3"
@@ -11109,11 +11094,6 @@ Lockfile:
     version "0.13.7"
     resolved "https://registry.npmjs.org/regenerator-runtime/-/regenerator-runtime-0.13.7.tgz"
     integrity sha512-a54FxoJDIr27pgf7IgeQGxmqUNYrcV338lf/6gH456HZ/PhX+5BcwHXG9ajESmwe6WRO0tAzRUrRmNONWgkrew==
-  
-  regenerator-runtime@^0.9.5:
-    version "0.9.6"
-    resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.9.6.tgz#d33eb95d0d2001a4be39659707c51b0cb71ce029"
-    integrity sha1-0z65XQ0gAaS+OWWXB8UbDLcc4Ck=
   
   regenerator-transform@^0.14.2:
     version "0.14.5"
@@ -12864,6 +12844,13 @@ Lockfile:
     version "2.0.3"
     resolved "https://registry.npmjs.org/tslib/-/tslib-2.0.3.tgz"
     integrity sha512-uZtkfKblCEQtZKBF6EBXVZeQNl82yqtDQdv+eck8u7tdPxjLu2/lp5/uPW+um2tpuxINHWy3GhiccY7QgEaVHQ==
+  
+  tsparticles@^1.18.10:
+    version "1.18.12"
+    resolved "https://registry.yarnpkg.com/tsparticles/-/tsparticles-1.18.12.tgz#b6fb441c90b99ab1177c7db2ac9b09e9c24d9ca1"
+    integrity sha512-7WY31HckCzzaiuudQlIeCE3Y5C4AslnJsuM/aeSDMErx7p7GjXzfUIO5qpzwyoJ7KRNURxIhADTXSDEtqkJFxw==
+    optionalDependencies:
+      pathseg "^1.2.0"
   
   tsutils@^3.17.1:
     version "3.20.0"
