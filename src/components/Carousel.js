@@ -9,7 +9,7 @@ const CarouselGC = () => {
         <Carousel>
             <Carousel.Item interval={3000}>
             <img
-            className="d-block w-100 carousel"
+            className="h-40 d-block w-100 carousel"
             src={mainGal1}
             alt="First slide"
             />
@@ -20,7 +20,7 @@ const CarouselGC = () => {
             </Carousel.Item>
             <Carousel.Item interval={3000}>
                 <img
-                className="d-block w-100 carousel"
+                className="h-40 d-block w-100 carousel"
                 src={mainGal2}
                 alt="Third slide"
                 />
@@ -31,7 +31,7 @@ const CarouselGC = () => {
             </Carousel.Item>
             <Carousel.Item interval={3000}>
                 <img
-                className="d-block w-100 carousel"
+                className="h-40 d-block w-100 carousel"
                 src={mainGal3}
                 alt="Third slide"
                 />

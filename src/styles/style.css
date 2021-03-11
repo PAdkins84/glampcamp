@@ -452,6 +452,10 @@ body {
   font-family: "Goldman", cursive !important;
 }
 
+a {
+  color: #4B4453 !important;
+}
+
 .particles {
   position: fixed;
   top: 0;
@@ -622,7 +626,7 @@ body {
   -ms-grid-rows: 20% 5% 75%;
       grid-template-rows: 20% 5% 75%;
   background-color: #F0E6EF;
-  height: 600px;
+  height: 500px;
 }
 
 .aboutH {
@@ -639,7 +643,8 @@ body {
 }
 
 .aboutImg {
-  width: 260px;
+  width: 280px;
+  height: 200px;
   -ms-grid-column: 3;
       grid-column-start: 3;
   grid-column-end: 5;
@@ -687,8 +692,8 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 5% 30% 65%;
-        grid-template-rows: 5% 30% 65%;
+    -ms-grid-rows: 8% 50% 42%;
+        grid-template-rows: 8% 50% 42%;
     background-color: #F0E6EF;
     height: 100%;
   }
@@ -726,8 +731,8 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 5% 38% 57%;
-        grid-template-rows: 5% 38% 57%;
+    -ms-grid-rows: 8% 50% 42%;
+        grid-template-rows: 8% 50% 42%;
     background-color: #F0E6EF;
     height: 100%;
   }
@@ -757,8 +762,8 @@ body {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 5% 38% 57%;
-        grid-template-rows: 5% 38% 57%;
+    -ms-grid-rows: 8% 50% 42%;
+        grid-template-rows: 8% 50% 42%;
     background-color: #F0E6EF;
     height: 100%;
   }

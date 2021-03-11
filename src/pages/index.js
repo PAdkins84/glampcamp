@@ -14,18 +14,18 @@ const IndexPage = () => {
       <CarouselGC />
         <section id="home-icons" className="py-5">
             <div className="container">
-              <div className="row tagline">
-                <div className="col-md-4 mb-2 text-center">
+              <div className="row mr-0 tagline">
+                <div className="col-md-4 mb-2 mr-0 text-center">
                 <GiPartyPopper size={50} className="ml-auto mr-2" />
                   <h3>All Occasions</h3>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
                 </div>
-                <div className="col-md-4 mb-2 text-center">
+                <div className="col-md-4 mb-2 mr-0 text-center">
                 <BiCalendarCheck size={50} className="ml-auto mr-2" />
                   <h3>Many Dates Available</h3>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>
                 </div>
-                <div className="col-md-4 mb-2 text-center">
+                <div className="col-md-4 mb-2 mr-0 text-center">
                 <FaChild size={50} className="ml-auto mr-2" />
                   <h3>For All Ages</h3>
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, veniam.</p>

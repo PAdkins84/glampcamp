@@ -18,6 +18,7 @@ const Header = () => {
                 <Link to="/gallery" className="mobileRemove text-dark ml-3">Gallery</Link>
                 <Link to="/pricing" className="mobileRemove text-dark ml-3">Pricing</Link>
                 <Link to="/contact" className="mobileRemove text-dark ml-3">Contact</Link>
+                <Link to="/blog" className="mobileRemove text-dark ml-3">Blog</Link>
             </Nav>
             <a className="text-dark" href="https://www.facebook.com/glamp.camp.5/"><FaFacebookSquare size={20} className="ml-auto mr-2" /></a>
             <a className="text-dark" href="https://www.instagram.com/glampcamp21/"><FaInstagram size={20} className="mr-3" /></a>
@@ -62,7 +63,12 @@ const Header = () => {
                                 <Link to="/contact">
                                     <span>Contact</span>
                                 </Link>
-                            </li>   
+                            </li>
+                            <li className="nav-text">
+                                <Link to="/blog">
+                                    <span>Blog</span>
+                                </Link>
+                            </li>      
                 </ul>
             </nav>
         </Navbar>

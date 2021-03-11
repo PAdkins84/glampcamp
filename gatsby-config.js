@@ -3,6 +3,14 @@ module.exports = {
     title: "glamp-camp",
   },
   plugins: [
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        url:
+          process.env.WPGRAPHQL_URL ||
+          `https://glamp-camp.co.uk/booking/graphql`,
+      },
+    },
     "gatsby-plugin-sass",
     "gatsby-plugin-sharp",
     "gatsby-plugin-react-helmet",
